@@ -1,3 +1,5 @@
+<?php header("Cache-Control: max-age=2592000"); //30days (60sec * 60min * 24hours * 30days)?>
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -7,12 +9,15 @@
 	<meta name="description" content="Agence la Panthère, agence web design et graphisme. Conception de logo, charte graphique, illustrations, votre image est notre priorité.">
     <meta name= "robots" content= "index,follow">
 
+	<meta http-equiv="Cache-control" content="public">
+
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
-	<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="style.css">
 	<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+	<link rel="stylesheet" href="./css/responsive.css" type="text/css">
 	
     
     <title>Agence La Panthère | Accueil</title>
@@ -131,11 +136,7 @@
 				</h2>
 				<p class="text-center white">
 					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br>
-				</p>			
-				<div class="text-center">
-					<a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
-				</div>
-
+				</p>
 			</div>
 		</div>
 	</div>
@@ -223,22 +224,22 @@
 					<div class="row row-no-gutters social">
 						<div class="col-sm-3">
 							<div class="text-center">
-								<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+								<a class="social" href="https://www.twitter.com"><span class="fa fa-twitter icon-md"></span></a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="text-center">
-								<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+								<a class="social" href="https://www.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="text-center">
-								<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+								<a class="social" href="https://www.dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="text-center">
-								<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+								<a class="social" href="https://www.instagram.com"><span class="fa fa-instagram icon-md"></span></a>
 							</div>
 						</div>
 					</div>
